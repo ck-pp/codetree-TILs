@@ -20,7 +20,7 @@ for idx in range(0, len(N_list)-len(M_list)+1):
     temp_p = sorted(N_list[idx:idx+len(M_list)])
     diff = M_list[0]-temp_p[0]
     flag = True
-    for idx_m in range(len(M_list)-1):
+    for idx_m in range(len(M_list)):
         if diff != M_list[idx_m]-temp_p[idx_m]:
             flag = False
             break
